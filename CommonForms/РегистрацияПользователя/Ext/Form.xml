@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<PictureDecoration name="ЛогоНогтевойСервис" id="1">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лого ногтевой сервис</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Picture>
+				<xr:Ref>CommonPicture.ЛогоНогтевойСервис</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="ЛогоНогтевойСервисКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЛогоНогтевойСервисРасширеннаяПодсказка" id="3"/>
+		</PictureDecoration>
+		<LabelDecoration name="НогтевойСервис" id="4">
+			<Font ref="style:NormalTextFont" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ногтевой сервис</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="НогтевойСервисКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НогтевойСервисРасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="7">
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<InputField name="Логин" id="16">
+			<DataPath>Логин</DataPath>
+			<TitleTextColor>style:FormTextColor</TitleTextColor>
+			<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЛогинКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Телефон" id="19">
+			<DataPath>Телефон</DataPath>
+			<TitleTextColor>style:FormTextColor</TitleTextColor>
+			<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Mask>+9(999)999-99-99999999999</Mask>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Button name="Зарегистрироваться" id="22">
+			<Type>UsualButton</Type>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.Зарегистрироваться</CommandName>
+			<TextColor>style:ButtonBackColor</TextColor>
+			<BackColor>style:NavigationColor</BackColor>
+			<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Shape>Oval</Shape>
+			<ExtendedTooltip name="ЗарегистрироватьсяРасширеннаяПодсказка" id="23"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Логин" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Телефон" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Зарегистрироваться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрироваться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрироваться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Зарегистрироваться</Action>
+		</Command>
+	</Commands>
+</Form>
